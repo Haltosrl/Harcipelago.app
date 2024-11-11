@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 import datetime
 
 # Caricamento del file Excel
-excel_file = '/Users/gp/Library/CloudStorage/OneDrive-Personale/Meravimutuo/Harcipelago/Harcipelago Excel2.xlsx'
+excel_file = '/home/Halto/Harcipelago/Harcipelago Excel2.xlsx'
 df = pd.read_excel(excel_file, sheet_name='Tabella')
 df['Data'] = pd.to_datetime(df['Data'], errors='coerce')
 df_totali = pd.read_excel(excel_file, sheet_name='Totali', header=None)
